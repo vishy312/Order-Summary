@@ -1,0 +1,100 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+main {
+  background-image: url("images/pattern-background-mobile.svg");
+}
+
+@media (min-width: 400px) {
+  main {
+    background-image: url("images/pattern-background-desktop.svg");
+  }
+}
+
+.container {
+  border: 2px solid black;
+  width: 356px;
+  height: 550px;
+  border-radius: 3%;
+  margin: auto;
+}
+
+.image {
+  width: 100%;
+  border-radius: 3%;
+}
+
+h1 {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 4000;
+  color: hsl(223, 47%, 23%);
+}
+
+p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 1em 4em 1em 4em;
+  color: hsl(224, 23%, 55%);
+}
+
+.subscription {
+  margin: 3em auto 3em auto;
+  padding: 0.5em 0 0.5em 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  width: 80%;
+  border-radius: 5%;
+}
+
+.btn {
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: hsl(245, 75%, 52%);
+  padding: 0.75em 0 0.75em 0;
+  color: white;
+  width: 90%;
+  border-radius: 5%;
+  box-shadow: 5px 10px hsl(225, 100%, 98%);
+}
+
+.cancel {
+  margin: 1.5em auto 0.8em auto;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.85rem;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+span {
+  color: hsl(224, 23%, 55%);
+}
+
+#btn {
+  color: white;
+  text-decoration: none;
+}
+
+#change {
+  color: hsl(245, 75%, 52%);
+  font-size: 0.85rem;
+}
+
+#change:hover {
+  color: hsl(224, 23%, 55%);
+}
+
+.btn:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
+  color: black;
+}
